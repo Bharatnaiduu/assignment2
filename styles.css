@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-container {
+    margin-left: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 1em;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.auth-buttons button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.auth-buttons button:hover {
+    background-color: #ddd;
+}
+
+.search-bar {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.search-bar button {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.product-card {
+    background-color: pink;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1em;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-bottom: 1px solid pink;
+    padding-bottom: 1em;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.product-card .price {
+    font-size: 1.1em;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.product-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product-card button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;
+    }
+}
+
+.contact-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 1em;
+}
+
+.contact-section p {
+    margin-bottom: 0.5em;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.contact-section form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-section form button:hover {
+    background-color: #45a049;
+}
